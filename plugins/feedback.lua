@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
 
-local fuse = '#newfeedback \n\nID ▶️ : ' .. msg.from.id .. '\n\nGROUP ID ▶️ : '..msg.to.id..'\n\nName▶️ : ' .. msg.from.print_name ..'\n\nusername ▶️ :@'..(msg.from.username or 'ندارد')..'\n\nPhone number ▶️ :+'..(msg.from.phone or 'ندارد')..'\n\n🅿️♏️ :\n\n\n' .. matches[1] 
+local fuse = '#newfeedback \n\nID ▶️ : ' .. msg.from.id .. '\n\nGROUP ID ▶️ : '..msg.to.id..'\n\nName▶️ : ' .. msg.from.print_name ..'\n\nusername ▶️ :@'..(msg.from.username or 'ندارد')..'\n\nPhone number ▶️ :+'..(msg.from.phone or 'ندارد')..'\n\n🅿️♏️ :by \n\nby amour\n' .. matches[1] 
 local fuses = '!printf user#id' .. msg.from.id
 
 
@@ -19,7 +19,7 @@ local fuses = '!printf user#id' .. msg.from.id
  else
 
 
-                 local sends0 = send_msg('channel#1065958052', fuse, ok_cb, false)
+                 local sends0 = send_msg('channel#1061988884', fuse, ok_cb, false)
 
  return 'پیام شما با موفقیت برای ما ارسال شد!'
 
